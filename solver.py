@@ -65,7 +65,6 @@ def solve(board):
             board[row][col] = i
 
             if solve(board):
-                print(board)
                 return True
 
             board[row][col] = 0
