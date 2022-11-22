@@ -1,1 +1,6 @@
 # example input 524617938896253147173498562918765423765342891432981675341529786687134259259876314
+
+
+# find empties
+# find potential solutions
+# test potential solutions
