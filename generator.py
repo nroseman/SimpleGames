@@ -79,13 +79,16 @@ class Grid:
 
     def print_grid(self):
         final_string = ''
+        final_list = []
         for row in self.board:
             lists = []
             for cell in row:
                 lists.append(cell.value)
                 final_string += f'{cell.value}'
             print(lists)
+            final_list.append(lists)
         print(final_string)
+        print(final_list)
 
     def fill_cell(self):
         for cell in self.cell_list:
