@@ -2,6 +2,8 @@
 # which was taken from Tech with Tim: https://www.techwithtim.net/tutorials/python-programming/sudoku-solver-backtracking/
 
 
+# TODO: look into finding all solutions, not just one. Look at itertools to get all combo of possible guesses, then brute force that way.
+
 # example input:
 # [
 # [7, 5, 4, 8, 3, 9, 1, 6, 2],
