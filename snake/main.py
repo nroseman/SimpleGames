@@ -66,6 +66,17 @@ class Game:
         self.display_surface.blit(text_surf_1, text_surf_1.get_rect(
             center=(WINDOW_WIDTH/2, WINDOW_HEIGHT/2)))
 
+        text_surf_2 = self.font.render('press start to retry', True, 'white')
+        self.display_surface.blit(text_surf_2, text_surf_2.get_rect(
+            midtop=(WINDOW_WIDTH/2, WINDOW_HEIGHT/2 + 80)))
+        if pygame.key.get_pressed()[pygame.K_SPACE]:
+            self.reset()
+
+    def reset(self):
+        self.food_sprites.empty()
+        self.food = Food(vector(128, 128), self.food_sprites)
+        self.snake = Snake(self.food_sprites)
+
 
 if __name__ == '__main__':
     game = Game()
